@@ -54,7 +54,7 @@ http://3.128.206.149:8080/api/franquicias/todas
   },
   {
     "id": 3,
-    "nombre": "Sucursal Nortes"
+    "nombre": "Sucursal del Norte"
   }
 ]
 ```
