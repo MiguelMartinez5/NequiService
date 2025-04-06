@@ -171,8 +171,6 @@ Exponer endpoint para agregar producto a una nueva sucursal.
 
 ```
 
-
-
 ### 📌 Endpoint
 
 `DELETE` [http://3.128.206.149:8080/api/franquicias/productos/1](http://3.128.206.149:8080/api/franquicias/productos/1)
@@ -190,8 +188,6 @@ Exponer endpoint para eliminar producto.
 
 
 ```
-
-
 
 ### 📌 Endpoint
 
@@ -211,9 +207,6 @@ Exponer endpoint para actualizar Stock.
 
 ```
 
-
-
-
 ### 📌 Endpoint
 
 `GET` [http://3.128.206.149:8080/api/franquicias/2/productos-max-stock](http://3.128.206.149:8080/api/franquicias/2/productos-max-stock)
@@ -229,13 +222,6 @@ Exponer endpoint para obtener producto con mayor stock.
 
 
 ```
-
-
-
-
-
-
-
 
 
 ### 📌 Endpoint
@@ -257,11 +243,6 @@ Exponer endpoint para actualizar nombre de la franquicia.
 ```
 
 
-
-
-
-
-
 ### 📌 Endpoint
 
 `PUT` [http://3.128.206.149:8080/api/franquicias/sucursales/2/actualizar-nombre](http://3.128.206.149:8080/api/franquicias/sucursales/2/actualizar-nombre)
@@ -279,9 +260,6 @@ Exponer endpoint para actualizar nombre de la sucursal.
 
 
 ```
-
-
-
 
 
 
