@@ -17,7 +17,7 @@ Este proyecto es un **microservicio** desarrollado en **Spring Boot**, que permi
 
 ## 💾 Base de Datos
 
-Se utilizó **MySQL** en un servicio de **RDS (Relational Database Service)** de **AWS**.
+Para la capa de persistencia de datos, se utilizó el motor de base de datos **MySQL**, implementado a través del servicio **Amazon RDS** (Relational Database Service) de **AWS**. Esta solución permite una administración eficiente, escalabilidad automática y alta disponibilidad de la base de datos en la nube.
 
 **Datos de conexión:**
 
@@ -31,7 +31,7 @@ Se utilizó **MySQL** en un servicio de **RDS (Relational Database Service)** de
 
 ## 🌐 Despliegue en la Nube
 
-Este microservicio está desplegado en una instancia **EC2 de AWS** con la siguiente dirección pública:
+Este microservicio se encuentra desplegado en una instancia **EC2 de AWS**, ejecutándose sobre un sistema operativo **Linux**. La instancia cuenta con una dirección IP pública. Para su implementación en la nube, se provisionó una máquina virtual en **Amazon EC2**, donde se realizó el despliegue del código de manera eficiente y segura.
 
 ### 🔗 IP Pública: 3.128.206.149:8080
 
