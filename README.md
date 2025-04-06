@@ -1,6 +1,6 @@
 # 🏦 Nequi Franquicias Microservicio
 
-Este proyecto es un **microservicio** desarrollado en **Spring Boot**, que permite la gestión de **franquicias**, **sucursales** y **productos**, incluyendo operaciones como creación, actualización de stock y modificación de nombres. Fue desplegado en la nube usando una instancia **EC2** de **AWS** y utiliza una base de datos **MySQL** también alojada en AWS RDS.
+Este proyecto es un **microservicio** desarrollado en **Spring Boot**, que permite la gestión de **franquicias**, **sucursales** y **productos**, incluyendo operaciones como creación, actualización de stock y modificación de nombres. Fue desplegado en la nube usando una instancia **EC2** de **AWS** y utiliza una base de datos **MySQL** también alojada en **AWS RDS**.
 
 ---
 
