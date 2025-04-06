@@ -21,8 +21,9 @@ Se utilizó **MySQL** en un servicio de **RDS (Relational Database Service)** de
 
 **Datos de conexión:**
 
-- **URL JDBC:**  
-  `jdbc:mysql://database-1.c3sgk42s8hfr.us-east-2.rds.amazonaws.com:3306/nequi-pruebas`
+- **URL JDBC:**  `jdbc:mysql://database-1.c3sgk42s8hfr.us-east-2.rds.amazonaws.com:3306/nequi-pruebas`
+- **Port:** `3306`
+- **Base de Datos:** `nequi-pruebas`
 - **Usuario:** `admin`
 - **Contraseña:** `Sistemas123`
 
@@ -32,4 +33,28 @@ Se utilizó **MySQL** en un servicio de **RDS (Relational Database Service)** de
 
 Este microservicio está desplegado en una instancia **EC2 de AWS** con la siguiente dirección pública:
 
-### 🔗 IP Pública:
+### 🔗 IP Pública: 3.128.206.149:8080
+
+Para evitar ejecutar el proyecto localmente, puedes utilizar directamente el servicio en la nube:
+
+**Ejemplo:**
+
+`GET`
+http://3.128.206.149:8080/api/franquicias/todas
+
+```json
+[
+  {
+    "id": 1,
+    "nombre": "Grupo A"
+  },
+  {
+    "id": 2,
+    "nombre": "Grupo B"
+  },
+  {
+    "id": 3,
+    "nombre": "Sucursal Nortes"
+  }
+]
+```
