@@ -47,6 +47,62 @@ http://3.128.206.149:8080/api/franquicias/todas
   {
     "id": 1,
     "nombre": "Grupo A"
+  }
+]
+```
+---
+## ✅ Criterios de Aceptación
+- **Exponer endpoint para obtener todas las franquicias**
+  `GET` http://3.128.206.149:8080/api/franquicias/todas
+    
+      
+- **Exponer endpoint para crear nueva franquicia**
+  `POST` http://3.128.206.149:8080/api/franquicias
+  
+- **Exponer endpoint para crear nueva sucursal**
+  `POST` http://3.128.206.149:8080/api/franquicias/2/sucursales
+  
+- **Exponer endpoint para agregar producto a una nueva sucursal**
+  `POST` http://3.128.206.149:8080/api/franquicias/sucursales/1/productos
+
+- **Exponer endpoint para eliminar producto**
+  `DEL` http://3.128.206.149:8080/api/franquicias/productos/1
+
+
+  
+  
+- **Exponer endpoint para actualizar Stock**
+  `PUT` http://3.128.206.149:8080/api/franquicias/productos/1/stock
+  
+- **Exponer endpoint para obtener producto con mayor stock**
+  `GET` http://3.128.206.149:8080/api/franquicias/2/productos-max-stock
+  
+- **Exponer endpoint para actualizar nombre de la franquicia**
+  `PUT` http://3.128.206.149:8080/api/franquicias/sucursales/1/actualizar-nombre
+  
+- **Exponer endpoint para actualizar nombre de la sucursal**
+  `PUT` http://3.128.206.149:8080/api/franquicias/sucursales/2/actualizar-nombre
+  
+- **Exponer endpoint para actualizar nombre de un producto especifico**
+  `PUT`  http://3.128.206.149:8080/api/franquicias/productos/1/actualizar-nombre
+  
+  
+
+### 📌 Endpoint
+
+`GET` [http://3.128.206.149:8080/api/franquicias](http://3.128.206.149:8080/api/franquicias)
+
+### 📝 Descripción
+
+Exponer endpoint para obtener todas las franquicias.
+
+###  (JSON)
+
+```json
+[
+  {
+    "id": 1,
+    "nombre": "Grupo A"
   },
   {
     "id": 2,
@@ -58,3 +114,193 @@ http://3.128.206.149:8080/api/franquicias/todas
   }
 ]
 ```
+
+
+### 📌 Endpoint
+
+`POST` [http://3.128.206.149:8080/api/franquicias](http://3.128.206.149:8080/api/franquicias)
+
+### 📝 Descripción
+
+Exponer endpoint para crear nueva franquicia.
+
+###  (JSON)
+
+```json
+{
+
+    "nombre":"Sucursal Norte"
+}
+```
+
+
+### 📌 Endpoint
+
+`POST` [http://3.128.206.149:8080/api/franquicias/2/sucursales](http://3.128.206.149:8080/api/franquicias/2/sucursales)
+
+### 📝 Descripción
+
+Exponer endpoint para crear nueva sucursal.
+
+###  (JSON)
+
+```json
+{
+  "nombre": "Sucursal CC Andino"
+}
+
+```
+
+
+### 📌 Endpoint
+
+`POST` [http://3.128.206.149:8080/api/franquicias/sucursales/1/productos](http://3.128.206.149:8080/api/franquicias/sucursales/1/productos)
+
+### 📝 Descripción
+
+Exponer endpoint para agregar producto a una nueva sucursal.
+
+###  (JSON)
+
+```json
+{
+  "nombre": "Zapatos de vestir",
+  "stock": 100
+}
+
+
+```
+
+
+
+### 📌 Endpoint
+
+`DELETE` [http://3.128.206.149:8080/api/franquicias/productos/1](http://3.128.206.149:8080/api/franquicias/productos/1)
+
+### 📝 Descripción
+
+Exponer endpoint para eliminar producto.
+
+###  (JSON)
+
+```json
+{
+  "id": 1
+}
+
+
+```
+
+
+
+### 📌 Endpoint
+
+`PUT` [http://3.128.206.149:8080/api/franquicias/productos/1/stock](http://3.128.206.149:8080/api/franquicias/productos/1/stock)
+
+### 📝 Descripción
+
+Exponer endpoint para actualizar Stock.
+
+###  (JSON)
+
+```json
+{
+  "stock": 120
+}
+
+
+```
+
+
+
+
+### 📌 Endpoint
+
+`GET` [http://3.128.206.149:8080/api/franquicias/2/productos-max-stock](http://3.128.206.149:8080/api/franquicias/2/productos-max-stock)
+
+### 📝 Descripción
+
+Exponer endpoint para obtener producto con mayor stock.
+
+###  (JSON)
+
+```json
+[]
+
+
+```
+
+
+
+
+
+
+
+
+
+### 📌 Endpoint
+
+`PUT` [http://3.128.206.149:8080/api/franquicias/sucursales/1/actualizar-nombre](http://3.128.206.149:8080/api/franquicias/sucursales/1/actualizar-nombre)
+
+### 📝 Descripción
+
+Exponer endpoint para actualizar nombre de la franquicia.
+
+###  (JSON)
+
+```json
+{
+  "nuevoNombre": "Nuevo Nombre de la Sucursal"
+}
+
+
+```
+
+
+
+
+
+
+
+### 📌 Endpoint
+
+`PUT` [http://3.128.206.149:8080/api/franquicias/sucursales/2/actualizar-nombre](http://3.128.206.149:8080/api/franquicias/sucursales/2/actualizar-nombre)
+
+### 📝 Descripción
+
+Exponer endpoint para actualizar nombre de la sucursal.
+
+###  (JSON)
+
+```json
+{
+  "nuevoNombre": "Sucursal Unicentro"
+}
+
+
+```
+
+
+
+
+
+
+### 📌 Endpoint
+
+`PUT` [http://3.128.206.149:8080/api/franquicias/productos/1/actualizar-nombre](http://3.128.206.149:8080/api/franquicias/productos/1/actualizar-nombre)
+
+### 📝 Descripción
+
+Exponer endpoint para actualizar nombre de un producto especifico.
+
+###  (JSON)
+
+```json
+{
+  "nuevoNombre": "Zapatos Deportivos"
+}
+
+
+
+```
+
